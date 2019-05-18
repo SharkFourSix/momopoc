@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fefefe"
+    tools:context="app.gintec_rdl.momopoc.activity.MainActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:padding="16dp"
+        android:text="@string/connection"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/txt_host"
+            android:padding="16dp"
+            android:hint="@string/host"
+            android:layout_weight="60"
+            android:layout_width="0dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/txt_port"
+            android:padding="16dp"
+            android:hint="@string/port"
+            android:inputType="number"
+            android:maxLength="5"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:layout_weight="30"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:text="@string/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:padding="16dp"
+        android:text="@string/transactions"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        app:layoutManager="LinearLayoutManager"
+        app:reverseLayout="true"
+        app:stackFromEnd="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

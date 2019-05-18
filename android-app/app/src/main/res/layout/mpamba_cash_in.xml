@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_transaction_type"
+        android:text="@string/cash_in"
+        android:background="#a290"
+        style="@style/AppTheme.TransactionItemTitle"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:text="@string/transaction_id"
+        style="@style/AppTheme.TransactionItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_transactionId"
+        tools:text="6H45009828342"
+        style="@style/AppTheme.TransactionItemSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:text="@string/date"
+        style="@style/AppTheme.TransactionItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_date"
+        tools:text="Jan 1st 1900 00:00:00"
+        style="@style/AppTheme.TransactionItemSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:text="@string/agent"
+        style="@style/AppTheme.TransactionItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_agent"
+        tools:text="23454 John Doe"
+        style="@style/AppTheme.TransactionItemSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:text="@string/amount"
+        style="@style/AppTheme.TransactionItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_amount"
+        tools:text="20,000.00"
+        style="@style/AppTheme.TransactionItemSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:text="@string/fee"
+        style="@style/AppTheme.TransactionItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_fee"
+        tools:text="0.00"
+        style="@style/AppTheme.TransactionItemSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:text="@string/balance"
+        style="@style/AppTheme.TransactionItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_balance"
+        tools:text="0.00"
+        style="@style/AppTheme.TransactionItemSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

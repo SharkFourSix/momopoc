@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MomoPoc</string>
+    <string name="port">Port</string>
+    <string name="host">Host</string>
+    <string name="connection">Connection</string>
+    <string name="connected_to_server">Connected to server</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="transactions">Live Transactions</string>
+    <string name="save">Update</string>
+    <string name="extraction_service_name">Transaction Extraction Service</string>
+    <string name="extraction_service_description">This service intercepts incoming mobile money transaction SMS messages and extracts the transactions. Extracted transactions are sent back to the server</string>
+    <string name="processed_transactions">%,d transactions processed</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="date">Date</string>
+    <string name="agent">Agent</string>
+    <string name="amount">Amount</string>
+    <string name="fee">Fee</string>
+    <string name="balance">Balance</string>
+    <string name="cash_in">Cash In</string>
+    <string name="deposit">Deposit</string>
+    <string name="source">Source</string>
+    <string name="credit">Credit</string>
+    <string name="recipient_phone">Recipient phone</string>
+    <string name="recipient_name">Recipient name</string>
+    <string name="debit">Debit</string>
+    <string name="sender_name">Sender name</string>
+    <string name="sender_phone">Sender phone</string>
+    <string name="cash_out">Cash out</string>
+</resources>
