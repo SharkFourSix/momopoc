@@ -21,17 +21,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import java.util.Date;
 import java.util.Locale;
 import java.util.Objects;
 
 import app.gintec_rdl.momopoc.R;
 import app.gintec_rdl.momopoc.adapter.TransactionViewModelAdapter;
 import app.gintec_rdl.momopoc.presentation.ModelViewProvider;
-import app.gintec_rdl.momopoc.presentation.ModelViewProviderRegistry;
 import app.gintec_rdl.momopoc.presentation.TransactionModelView;
 import app.gintec_rdl.momopoc.service.SmsListenerService;
-import lib.gintec_rdl.momo.model.MobileMoneyAgent;
 import lib.gintec_rdl.momo.model.MpambaCashInTransaction;
 import lib.gintec_rdl.momo.model.MpambaCashOutTransaction;
 import lib.gintec_rdl.momo.model.MpambaCreditTransaction;
@@ -86,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        /*
         ModelViewProviderRegistry registry = ModelViewProviderRegistry.getInstance();
         registry.registerModelViewProvider(MpambaTransactionModelViewProvider.class);
         recyclerView.setAdapter(adapter = new TransactionViewModelAdapter());
@@ -135,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addTransaction(depositTransaction);
         adapter.addTransaction(creditTransaction);
         adapter.addTransaction(debitTransaction);
-        adapter.addTransaction(cashOutTransaction);
+        adapter.addTransaction(cashOutTransaction);*/
     }
 
     @Override
