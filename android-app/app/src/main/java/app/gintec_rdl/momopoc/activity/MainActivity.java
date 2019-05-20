@@ -27,6 +27,7 @@ import java.util.Objects;
 import app.gintec_rdl.momopoc.R;
 import app.gintec_rdl.momopoc.adapter.TransactionViewModelAdapter;
 import app.gintec_rdl.momopoc.presentation.ModelViewProvider;
+import app.gintec_rdl.momopoc.presentation.ModelViewProviderRegistry;
 import app.gintec_rdl.momopoc.presentation.TransactionModelView;
 import app.gintec_rdl.momopoc.service.SmsListenerService;
 import lib.gintec_rdl.momo.model.MpambaCashInTransaction;
@@ -83,12 +84,12 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-        /*
+        
         ModelViewProviderRegistry registry = ModelViewProviderRegistry.getInstance();
         registry.registerModelViewProvider(MpambaTransactionModelViewProvider.class);
         recyclerView.setAdapter(adapter = new TransactionViewModelAdapter());
 
+        /*
         MpambaCashInTransaction cashInTransaction = new MpambaCashInTransaction();
         cashInTransaction.setTransactionId("67AEDB9O6IH74ZH89");
         cashInTransaction.setDate(new Date());
