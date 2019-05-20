@@ -34,6 +34,7 @@ import lib.gintec_rdl.momo.extraction.ExtractionService;
 import lib.gintec_rdl.momo.extraction.TransactionExtractor;
 import lib.gintec_rdl.momo.extractors.MpambaTransactionExtractor;
 import lib.gintec_rdl.momo.model.MpambaCashInTransaction;
+import lib.gintec_rdl.momo.model.MpambaCashOutTransaction;
 import lib.gintec_rdl.momo.model.MpambaCreditTransaction;
 import lib.gintec_rdl.momo.model.MpambaDebitTransaction;
 import lib.gintec_rdl.momo.model.MpambaDepositTransaction;
@@ -243,6 +244,8 @@ public final class SmsListenerService extends Service {
                                     transactionType = "cash-in";
                                 }else if(tx instanceof MpambaDebitTransaction){
                                     transactionType = "debit";
+                                }else if(tx instanceof MpambaCashOutTransaction){
+                                    transactionType = "cash-out";
                                 }else{
                                     throw new Exception("Unknown transaction type");
                                 }

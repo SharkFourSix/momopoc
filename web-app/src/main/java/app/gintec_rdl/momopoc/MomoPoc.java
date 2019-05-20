@@ -42,6 +42,9 @@ public class MomoPoc {
                 case "credit":
                     transaction = tx(request, MpambaCreditTransaction.class);
                     break;
+				case "cash-out":
+					transaction = tx(request, MpambaCashOutTransaction.class);
+					break;
                 default:
                     transaction = null;
                     halt(HttpURLConnection.HTTP_BAD_REQUEST, "Unknown transaction type");
