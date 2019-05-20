@@ -18,4 +18,4 @@ Then configure as a dependency
 </dependency>
 ```
 
-Build ***momo-poc-web-app*** and ***android-app*** (Gradle/Android Studio) alternatively, an compiled APK has been attached
+Build ***momo-poc-web-app*** and ***android-app*** (Gradle/Android Studio) alternatively, a compiled APK has been attached (under releases)
