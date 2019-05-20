@@ -24,6 +24,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -39,7 +40,6 @@ import lib.gintec_rdl.momo.model.MpambaDepositTransaction;
 import lib.gintec_rdl.momo.model.Transaction;
 
 public final class SmsListenerService extends Service {
-    private static final int MSG_TRANSACTION_PROCESSED = 100;
     private static final String NOTIFICATION_CHANNEL_ID = "momo";
     private static final int NOTIFICATION_ID = 100;
     private static final String TAG = "SmsListenerService";
@@ -276,7 +276,7 @@ public final class SmsListenerService extends Service {
                 huc.setDoInput(true);
                 huc.setDoOutput(true);
                 outputStream = huc.getOutputStream();
-                outputStream.write(gson.toJson(transaction).getBytes("UTF-8"));
+                outputStream.write(gson.toJson(transaction).getBytes(StandardCharsets.UTF_8));
                 outputStream.flush();
                 responseCode = huc.getResponseCode();
             }catch (Exception e){
