@@ -42,9 +42,9 @@ public class MomoPoc {
                 case "credit":
                     transaction = tx(request, MpambaCreditTransaction.class);
                     break;
-				case "cash-out":
-					transaction = tx(request, MpambaCashOutTransaction.class);
-					break;
+                case "cash-out":
+                    transaction = tx(request, MpambaCashOutTransaction.class);
+                    break;
                 default:
                     transaction = null;
                     halt(HttpURLConnection.HTTP_BAD_REQUEST, "Unknown transaction type");
@@ -106,7 +106,7 @@ public class MomoPoc {
                 printWriter.printf("%-20s: %,.02f%n", "Amount", ((MpambaCashInTransaction) tx).getAmount());
                 printWriter.printf("%-20s: %,.02f%n", "Fee", ((MpambaCashInTransaction) tx).getFee());
                 printWriter.printf("%-20s: %,.02f%n", "Balance", ((MpambaCashInTransaction) tx).getBalance());
-            } else if(tx instanceof MpambaCashOutTransaction){
+            } else if (tx instanceof MpambaCashOutTransaction) {
                 final MobileMoneyAgent agent = ((MpambaCashOutTransaction) tx).getAgent();
                 printWriter.printf("%-20s: %s%n", "Type", "Cash-Out");
                 printWriter.printf("%-20s: %s%n", "Agent Code", agent != null ? agent.getAgentCode() : "n/a");
